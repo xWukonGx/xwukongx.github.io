@@ -1,0 +1,233 @@
+*{
+animation-name: up;
+animation-duration: 1s;
+animation-delay: 0.1s;
+animation-timing-function: ease-in-out;
+}
+body{
+   
+   
+    background-color:#171820;
+    overflow-x: hidden;
+    
+}
+#section-8 #bar{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+#section-8 #bar img#ik{
+    position: relative;
+    top:0;
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+    height: 50px;
+    left: 0;
+}
+.dik{
+    
+    color:white;
+    font-family: Gugi;
+    font-size: 15vw;
+    
+    margin-top: 8vh;
+    text-align: center;
+}
+.full #poto{
+    margin-top:9vw;
+    width: 100%;
+    display: block;
+}
+#section-8 #name{
+    color:white;
+    position: relative;
+    top: 12.5px;
+    left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#section-8 a#contact{
+    color:white;
+    background-color: tomato;
+    text-decoration: none;
+    margin-top: 5%;
+    padding: 14px 16px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    width: 100%;
+}
+#section-8 a#scrolling{
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+    margin-top: 3%;
+    padding: 14px 16px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 4px;
+    font-family: sans-serif;
+    border: 2px solid tomato;
+    box-sizing: border-box;
+    width: 100%;
+}
+#section-8 a#scrolling:hover{
+    background-color: tomato;
+    transition: cubic-bezier(1, 0, 0, 1) 0.2s 0s ;
+}
+#desc{
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 3%;
+    color: white;
+    text-align: left;
+    font-size: 5vw;
+    font-family: Cairo;
+}
+
+
+
+
+/*Section 2*/
+
+#section-9{
+    width: 100%;
+    height: auto;
+}
+#section-9 .title{
+    color:white;
+    font-family: Cairo;
+    font-size: 24px;
+    width: 50%;
+    display: block;
+    margin: 9vw auto 0vw auto;
+    border-bottom:1px solid white ;
+    text-align: center;
+}
+
+
+#section-9 .cards .card{
+    border-radius: 25px;
+    color:tomato;
+    height: auto;
+    margin: 1%;
+    box-shadow: rgb(0, 0, 0) 0px 3px 8px;
+    border:2px solid rgb(224, 58, 46);
+    
+}
+
+
+
+
+#section-9 .cards .card img{
+    width: 100%;
+    padding: 12%;
+box-sizing: border-box;
+mix-blend-mode: color-dodge;
+    height: aut;
+}
+
+
+
+#section-9 .cards .card:hover img{
+    box-sizing: border-box;
+    transition: ease 0.4s;
+    padding: 5%;
+}
+
+
+#section-9 .cards{
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    
+    justify-content: center;
+    width: 80%;
+    margin: 9vw auto;
+}
+
+
+/*==*/
+@media only screen and (min-width:480px){
+    .full{
+  
+        top: 0;
+    }
+    #section-8{
+        
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
+        padding: 1% 9%;
+    }
+    #section-8 #bar{
+        display: none;
+    }
+    #section-8 .full a#contact{
+        width: 44%;
+        
+    }
+   
+    #section-8  a#scrolling{
+        margin-top: 1%;
+        width: 44%;
+    }
+    #desc{
+        font-size: 1.5vw;
+        width: 45%;
+        text-align: none;
+        padding: 0%;
+    }
+    .full #poto{
+        float:right;width:44vw;height:auto; 
+        margin-top: 2vh;
+        display: block;
+    }
+    #section-8 img#ik{
+  
+    }
+    #section-8 #name{
+        left: 1px;
+        
+    }
+    #section-9 .cards{
+       display: grid;
+        grid-template-columns: repeat(5,18vw);
+        justify-content: center;
+        width: 80%;
+        margin: 9vw auto;
+    }
+    #section-9 .cards .card{
+        height: 18vw;
+    }
+ 
+    .full .dik{
+        font-size: 6vw;
+        position: relative;
+        top: 0;
+        text-align: left;
+    }
+    footer{
+        font-size: 1vw;
+    }
+    #name{
+        margin-left: 2%;
+        font-family: Gugi;
+    }
+}
+@font-face {
+    font-family: Gugi;
+    src: url("Gugi-Regular.ttf");
+}
+@font-face {
+    font-family: Cairo;
+    src: url("Cairo-Regular.ttf");
+}
+@keyframes up {
+    from{margin-top: 9%; opacity: 1;}
+    to{
+      opacity: 1;
+    }
+}
